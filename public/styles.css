@@ -1,0 +1,104 @@
+/* Stile generale del corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Titolo principale */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Sezione di autenticazione */
+#auth {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+h2 {
+    color: #555;
+}
+
+/* Form di input */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Pulsanti */
+button {
+    background-color: #eb3260;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #22bff8;
+}
+
+/* Sezione To-Do */
+#todoSection {
+    background: #fff;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#todoList {
+    list-style-type: none; /* Rimuove i punti dall'elenco */
+    padding-left: 0; /* Rimuove il padding a sinistra */
+}
+
+#todoList li {
+    background-color: #e9ecef; /* Colore di sfondo per le attività */
+    margin-bottom: 10px; /* Spazio tra le attività */
+    padding: 10px; /* Padding interno */
+    border-radius: 4px; /* Angoli arrotondati */
+}
+
+/* Stile per le attività completate */
+#todoList li.completed {
+    text-decoration: line-through; /* Barrato per le attività completate */
+    background-color: #d4edda; /* Colore di sfondo per le attività completate */
+}
+
+#logoutButton{
+    margin-left: 170px;
+}
+
+/* Media query per la responsività */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Riduce il padding su schermi piccoli */
+    }
+
+    form {
+        flex-direction: column; /* Mantiene i form in colonna su schermi piccoli */
+        align-items: stretch; /* Allinea gli elementi al centro */
+    }
+}
