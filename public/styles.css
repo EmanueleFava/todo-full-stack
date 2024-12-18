@@ -77,7 +77,7 @@ button:hover {
 #todoList li {
     background-color: #e9ecef; /* Colore di sfondo per le attività */
     margin-bottom: 10px; /* Spazio tra le attività */
-    padding: 10px; /* Padding interno */
+    padding: 20px; /* Padding interno */
     border-radius: 4px; /* Angoli arrotondati */
 }
 

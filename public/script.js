@@ -44,7 +44,9 @@ async function loadTodos() {
             // Creazione del bottone per eliminare il todo
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete';
-            deleteButton.style.marginLeft = '150px';
+            // deleteButton.style.marginLeft = 'auto';
+            deleteButton.style.float = 'right';
+            deleteButton.style.marginTop = '-8px';
 
             // Gestore del click per eliminare il todo
             deleteButton.addEventListener('click', async () => {
